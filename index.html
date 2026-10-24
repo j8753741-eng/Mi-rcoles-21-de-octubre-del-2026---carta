@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi lugar favorito también puede ser un instante</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:24px 13px;background:radial-gradient(ellipse at 50% 0%,#33291b,#0a0a0b 60%);color:#f5eddf;font-family:Georgia,serif}
+.card{max-width:720px;margin:auto;padding:25px;border:1px solid #a68a50;border-radius:24px;background:linear-gradient(170deg,#171614,#08090b);box-shadow:0 0 28px #c4a75a20}
+.date{text-align:center;color:#c7a962;font-size:12px;letter-spacing:3px}
+h1{text-align:center;font-size:clamp(28px,6vw,42px);font-weight:normal;line-height:1.25;color:#f0d79f;margin:24px 0}
+.sub{text-align:center;color:#b9b0a0;font-style:italic;margin-bottom:26px}
+.photo {
+    min-height: 0;
+    border-radius: 18px;
+    border: 1px solid #8f7849;
+    background: linear-gradient(135deg, #171613, #090909);
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 7px;
+    box-shadow: 0 0 22px #c4a75a20;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 13px;
+}
+input{display:none}
+.letter{font-size:18px;line-height:1.95}
+.letter p{margin:19px 0}
+.highlight{color:#f0d79f}
+.signature{text-align:center;margin-top:30px;color:#d7bb77;font-style:italic}
+.paws{text-align:center;font-size:25px;letter-spacing:12px;margin-top:24px;filter:drop-shadow(0 0 7px #bda45a)}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="date">MIÉRCOLES · 21 DE OCTUBRE DE 2026</div>
+<h1>Mi lugar favorito también puede ser un instante</h1>
+<div class="sub">A veces, la felicidad se parece a estar contigo. ♡</div>
+
+<div class="photo">
+    <img src="IMG_20261024_122735.png" alt="Un recuerdo especial de los dos">
+</div>
+
+<section class="letter">
+<p>Buenos días, amorcito mío. ❤️</p>
+
+<p>Hoy me puse a pensar en esos momentos que parecen sencillos mientras ocurren, pero que después se quedan dando vueltas en la memoria. Una conversación cualquiera, una sonrisa inesperada, una mirada que dura apenas unos segundos o el simple hecho de poder compartir un ratito contigo.</p>
+
+<p>Quizá para alguien más sean cosas pequeñas, pero mi corazón les da un valor distinto cuando tienen que ver contigo. No necesito que cada recuerdo sea enorme ni que todos los días suceda algo extraordinario. A veces, lo más bonito es precisamente aquello que no necesita hacer ruido.</p>
+
+<p>Me gusta imaginar todos los momentos que todavía nos esperan. Los que ya hemos vivido y los que aún no conocemos. No sé exactamente cómo serán nuestros próximos días, pero sí sé que quiero seguir aprendiendo a quererte de una manera bonita, sincera y cada vez más consciente.</p>
+
+<p>Quiero que mi amor no sea solamente algo que leas en una carta. Quiero que también se note en mi paciencia, en la forma en que te escucho, en cómo respeto tus tiempos y en las pequeñas acciones con las que puedo hacerte sentir acompañada.</p>
+
+<p class="highlight">Porque amarte no consiste únicamente en encontrar palabras bonitas; también consiste en esforzarme por convertirlas en gestos reales.</p>
+
+<p>Mi niña preciosa, deseo que hoy tengas un día tranquilo, que encuentres motivos para sonreír y que recuerdes lo valiosa que eres, incluso cuando tú misma no tengas tantas ganas de verlo.</p>
+
+<p>Si pudiera dejarte algo guardado para que lo encontraras en cualquier momento, sería esto: eres alguien muy especial para mí. Y no hace falta que pase nada extraordinario para que siga sintiéndolo.</p>
+
+<p>Te amo muchísimo, hoy, mañana y en cada uno de esos pequeños instantes que, cuando se comparten contigo, terminan significando tanto.</p>
+
+<div class="signature">Con cariño infinito, para ti. 🖤</div>
+<div class="paws">🐾 ♡ 🐾</div>
+</section>
+</main>
+<script>
+document.getElementById('foto').addEventListener('change',function(e){
+const file=e.target.files[0];if(!file)return;
+const img=document.getElementById('imagen');img.src=URL.createObjectURL(file);img.style.display='block';
+document.querySelector('.photo label').style.display='none';
+});
+</script>
+</body>
+</html>
